@@ -14,3 +14,19 @@ var database = firebase.database();
 // ID's: employee-name, employee-role,
 var MothsWorked = 0;
 
+var empName;
+var empRole;;
+var startDate;
+var monthsWorked;
+var empRate;
+var empBilled;
+
+$("#submit").on("click", function(event) {
+  var empName = $("id-here").val().trim();
+  var empRole = $("id-here").val().trim();
+  var startDate = $("id-here").val().trim();
+  var empRate = $("id-here").val().trim();
+
+  // var monthsWorked = "TODAY'S-DATE" - startDate;
+  var empBilled = monthsWorked * empRate;
+})
