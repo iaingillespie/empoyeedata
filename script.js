@@ -30,3 +30,11 @@ $("#submit").on("click", function(event) {
   // var monthsWorked = "TODAY'S-DATE" - startDate;
   var empBilled = monthsWorked * empRate;
 })
+database.ref().push({
+  name: "bob",
+  role: "boss",
+  age: 10,
+  startDate: "01jan18"
+});
+
+console.log(database);
