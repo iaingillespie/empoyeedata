@@ -19,30 +19,64 @@
 <!-- monthly salary input field id: employee-salary -->
 
 <body>
+    <div class="container">
 
-<table class="table">
-    <thead>
-        <tr>
-            <th scope="col">Employee Name</th>
-            <th scope="col">Role</th>
-            <th scope="col">Start Date</th>
-            <th scope="col">Months Worked</th>
-            <th scope="col">Monthly Rate ($)</th>
-            <th scope="col">Total Billed ($)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row" id="name">Akhil Kalepu</th>
-            <td id="role">Developer</td>
-            <td id="start-date">[DATE]</td>
-            <td id="months-worked">10</td>
-            <td id="monthly-rate">50</td>
-            <td id="total-billed">500</td>
-        </tr>
-    </tbody>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Employee Data Management</h1>
+                <p class="lead">A Comprehensive Directory of Employee Billable Hours</p>
+            </div>
+        </div>
 
-</table>
+        <div class="card">
+            <div class="card-body">
+                Add Employee
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail">Employee Name</label>
+                        <input type="text" class="form-class" id="id-here" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputRole">Role</label>
+                        <input type="text" class="form-class" id="id-here" placeholder="CEO">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputDate">Date</label>
+                        <input type="date" class="form-class" id="id-here" placeholder="2011-08-19">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputDate">Monthly Rate</label>
+                        <input type="number" class="form-class" id="id-here" placeholder="200">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Start Date</th>
+        
+                    <th scope="col">Months Worked</th>
+                    <th scope="col">Monthly Rate ($)</th>
+                    <th scope="col">Total Billed ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" id="name">Akhil Kalepu</th>
+                    <td id="role">Developer</td>
+                    <td id="start-date">[DATE]</td>
+                    <td id="months-worked">10</td>
+                    <td id="monthly-rate">50</td>
+                    <td id="total-billed">500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 
