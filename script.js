@@ -14,3 +14,11 @@ var database = firebase.database();
 // ID's: employee-name, employee-role,
 var MothsWorked = 0;
 
+database.ref().push({
+  name: "bob",
+  role: "boss",
+  age: 10,
+  startDate: "01jan18"
+});
+
+console.log(database);
