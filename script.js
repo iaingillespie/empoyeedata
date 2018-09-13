@@ -10,3 +10,7 @@ var config = {
 firebase.initializeApp(config);
 
 var database = firebase.database();
+
+// ID's: employee-name, employee-role,
+var MothsWorked = 0;
+
