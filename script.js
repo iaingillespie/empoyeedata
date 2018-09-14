@@ -15,21 +15,30 @@ var database = firebase.database();
 var MothsWorked = 0;
 
 var empName;
-var empRole;;
+var empRole;
 var startDate;
 var monthsWorked;
 var empRate;
 var empBilled;
 
 $("#submit").on("click", function(event) {
-  var empName = $("id-here").val().trim();
-  var empRole = $("id-here").val().trim();
-  var startDate = $("id-here").val().trim();
-  var empRate = $("id-here").val().trim();
+  event.preventDefault();
+  var empName = $("#name-input")
+    .val()
+    .trim();
+  var empRole = $("id-here")
+    .val()
+    .trim();
+  var startDate = $("id-here")
+    .val()
+    .trim();
+  var empRate = $("id-here")
+    .val()
+    .trim();
 
   // var monthsWorked = "TODAY'S-DATE" - startDate;
   var empBilled = monthsWorked * empRate;
-})
+});
 database.ref().push({
   name: "bob",
   role: "boss",
